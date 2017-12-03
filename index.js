@@ -10,6 +10,7 @@ function processLine(data, actions) {
     }
 }
 module.exports = function(configs) {
+    var tails = [];
     for (file in configs) {
         var actions = configs[file];
         var tail = new Tail(file);
@@ -20,7 +21,14 @@ module.exports = function(configs) {
         tail.on("error", function(err) {
             console.log(err);
         });
-
+        tails.push(tail);
     }
+    return {
+        stop: function(){
+            for(i in tails){
+                tails[i].unwatch();
+            }
+        }
+    };
 
 };

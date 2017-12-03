@@ -1,4 +1,5 @@
 var filetailor = require('./index');
+var fs = require('fs');
 
 var configs = {
     "test.log" : [
@@ -9,4 +10,4 @@ var configs = {
 ]
 };
 
-filetailor(configs);
+tailor = filetailor(configs);

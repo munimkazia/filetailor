@@ -14,5 +14,11 @@
   "dependencies": {
     "tail": "^1.2.3"
   },
-  "repository": "munimkazia/filetailor"
+  "repository": "munimkazia/filetailor",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  }
 }
