@@ -35,6 +35,12 @@ describe('filetailor', function() {
                             done(new Error("Wrong line matched!"));
                         }
                     }
+                },
+                {
+                    match: /not found/,
+                    action: function(data){
+                        done(new Error("Wrong rule matched!"));
+                    }    
                 }]
             };
             t = filetailor(config);
