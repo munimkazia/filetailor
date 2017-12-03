@@ -9,9 +9,10 @@
   "keywords": [
     "tail"
   ],
-  "author": "Abdul Munim Kazia",
-  "license": "ISC",
+  "author": "Abdul Munim Kazia <mail@munimkazia.com> (http://munimkazia.com)",
+  "license": "Apache-2.0",
   "dependencies": {
     "tail": "^1.2.3"
-  }
+  },
+  "repository": "munimkazia/nodetailor"
 }
