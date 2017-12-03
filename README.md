@@ -20,7 +20,7 @@ var config = {
 filetailor(config);
 ```
 To Do:
-* Write tests
+* ~~Write tests~~ Basic tests done
 * Add simple URL actions to post matched data
 * Write own file tailing code which does better error handling
 * Add action thresholds
